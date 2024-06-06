@@ -10,7 +10,7 @@ function getElementWidth(content, padding, border) {
   const borderValue = parsePx(border);
 
   // Враховуючи, що box-sizing: border-box
-  // Загальна ширина елемента = ширина контенту
+  // Загальна ширина елемента = ширина контенту+ падінг + бордер
   const getElementWidth = contentWidth + (paddingValue * 2) + (borderValue * 2);
 
   return getElementWidth;
